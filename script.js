@@ -14,10 +14,8 @@ for (var i = 0; i < 16; i++) {
     gridDiv.appendChild(rowBox);
 };
 
-for (var row of gridDiv.children) {
-    for (var el of row.children) {
-        el.addEventListener('mouseenter', () => {
-            el.classList.add('hovered');
-        });
-    };
-};
+document.querySelectorAll('.box').forEach(item => {
+    item.addEventListener('mouseenter', event => {
+        item.setAttribute('style', 'background-color:black;');
+    });
+});
