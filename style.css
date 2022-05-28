@@ -1,8 +1,15 @@
+body {
+    margin: 0;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 50px;
+    background-color: aquamarine;
+    padding-top: 20px;
 }
 
 .grid {
@@ -23,9 +30,18 @@
     aspect-ratio: 1 / 1;
     border-style: solid;
     border-width: 1px;
-    border-color: red;
+    border-color: cornflowerblue;
 }
 
-.hovered {
-    background-color: black;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gridSize {
+    width: 100px;
+    height: 40px;
+    background-color: bisque;
+    border-radius: 15px;
 }
